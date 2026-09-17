@@ -1,7 +1,7 @@
 # Algorithm2026
 ### Homework1
 
-[SelectionSorting](./homework/SelctionSorting/SelectionSorting.pde)
+[SelectionSorting](./homework/SelectionSorting/SelectionSorting.pde)
 ![Alt homework11](./homework/homework1.jpg)
 (./homework/Buble_sort/Buble_sort.pde)
 homework/Buble_sort/Buble_sort.pde
