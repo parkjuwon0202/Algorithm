@@ -2,7 +2,7 @@
 ### Homework1
 
 ![SelectionSorting](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SelectionSorting/SelectionSorting.pde)
-![Alt homework11](homework/Buble_sort/Buble_sort.pde)
+![Buble_Sorting](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/Buble_sort/Buble_sort.pde)
 (./homework/Buble_sort/Buble_sort.pde)
 homework/Buble_sort/Buble_sort.pde
 
