@@ -18,5 +18,9 @@ Buble_Sorting
 <img width="2007" height="1107" alt="image" src="https://github.com/user-attachments/assets/38afc271-5b1c-4dd2-9f6c-b386b030f2a3" />
 
 
+<img width="895" height="623" alt="스크린샷 2026-10-01 오후 1 28 27" src="https://github.com/user-attachments/assets/4d8c8789-59ac-4899-a2cb-f5b4f16b5e0c" />
+
+
+
 
 
