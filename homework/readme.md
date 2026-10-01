@@ -10,7 +10,7 @@ Selction_Sorting
 
 Buble_Sorting
 ![Buble_Sorting](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/Buble_sort/Buble_sort.pde)
-\n<img width="427" height="881" alt="BubleSorting" src="https://github.com/user-attachments/assets/c0b58bbe-ae15-4d00-b59b-079c519dc898" />
+<img width="427" height="881" alt="BubleSorting" src="https://github.com/user-attachments/assets/c0b58bbe-ae15-4d00-b59b-079c519dc898" />
 
 <img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/f4461e70-4f83-4bff-9bf9-8afb52988b48" />
 <img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/aea43183-bf22-4c96-bbf5-85da24cbb2c8" />
