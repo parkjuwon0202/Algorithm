@@ -23,10 +23,20 @@ Buble_Sorting
 <img width="895" height="623" alt="스크린샷 2026-10-01 오후 1 28 27" src="https://github.com/user-attachments/assets/4d8c8789-59ac-4899-a2cb-f5b4f16b5e0c" />
 
 [Array](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/Array.pde)
-<img width="479" height="667" alt="스크린샷 2026-10-06 오후 10 41 14" src="https://github.com/user-attachments/assets/6cf730c8-098e-4542-9a66-3b43dee6a567" />
+
+<img width="661" height="582" alt="스크린샷 2026-10-06 오후 11 05 31" src="https://github.com/user-attachments/assets/48691842-089a-40aa-8e93-b274a8e1c848" />
+
 [Array](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/Array.pde)
 
 
 [SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
-<img width="479" height="667" alt="스크린샷 2026-10-06 오후 10 41 25" src="https://github.com/user-attachments/assets/6c6c36b9-7614-4295-811c-94d7159aec70" />
+
+<img width="661" height="582" alt="스크린샷 2026-10-06 오후 11 05 25" src="https://github.com/user-attachments/assets/93a8505d-ebbc-48f8-9671-334d45959329" />
+
 [SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
+
+
+
+https://github.com/user-attachments/assets/89046ee1-7567-49a1-86d2-9e8e7aa853f8
+
+
