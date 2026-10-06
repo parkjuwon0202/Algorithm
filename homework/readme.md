@@ -27,4 +27,4 @@ Buble_Sorting
 [Array](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/Array.pde)
 
 <img width="479" height="667" alt="스크린샷 2026-10-06 오후 10 41 25" src="https://github.com/user-attachments/assets/6c6c36b9-7614-4295-811c-94d7159aec70" />
-(SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/Array.pde)
+(SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
