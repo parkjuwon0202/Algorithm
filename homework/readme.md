@@ -1,3 +1,4 @@
+<img width="1143" height="444" alt="capture_261008_120313" src="https://github.com/user-attachments/assets/69a9be09-cb6d-4845-acf5-37108ca604b5" />
 # Algorithm2026
 ### Homework1
 
@@ -36,7 +37,7 @@ Buble_Sorting
 [SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
 
 
-
-https://github.com/user-attachments/assets/89046ee1-7567-49a1-86d2-9e8e7aa853f8
+[BinarySearchTree]
+<img width="1143" height="444" alt="capture_261008_120313" src="https://github.com/user-attachments/assets/7a610157-83d9-48ef-a2ed-af06ce98893e" />
 
 
