@@ -1,4 +1,4 @@
-<img width="1143" height="444" alt="capture_261008_120313" src="https://github.com/user-attachments/assets/69a9be09-cb6d-4845-acf5-37108ca604b5" />
+
 # Algorithm2026
 ### Homework1
 
