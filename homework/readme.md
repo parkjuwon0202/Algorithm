@@ -1,4 +1,12 @@
 
+
+https://github.com/user-attachments/assets/70e29e56-3f35-419b-a8f7-929738acae1a
+
+
+
+https://github.com/user-attachments/assets/bc8a09d9-d484-4031-9a56-beed46d96bb2
+
+
 # Algorithm2026
 ### Homework1
 
@@ -32,7 +40,7 @@ Buble_Sorting
 
 [SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
 
-<img width="661" height="582" alt="스크린샷 2026-10-06 오후 11 05 25" src="https://github.com/user-attachments/assets/93a8505d-ebbc-48f8-9671-334d45959329" />
+<img width="2024" height="1480" alt="%ED%99%94%EB%A9%B4_%EA%B8%B0%EB%A1%9D_2026-10-01" src="https://github.com/user-attachments/assets/16588df7-c72d-4392-b1d9-b07e29a10df9" />
 
 [SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
 
