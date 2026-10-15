@@ -31,8 +31,6 @@ Buble_Sorting
 
 [SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
 
-<img width="2024" height="1480" alt="%ED%99%94%EB%A9%B4_%EA%B8%B0%EB%A1%9D_2026-10-01" src="https://github.com/user-attachments/assets/16588df7-c72d-4392-b1d9-b07e29a10df9" />
-
 [SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
 
 
