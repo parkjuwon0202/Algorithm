@@ -1,16 +1,7 @@
 
 
-https://github.com/user-attachments/assets/70e29e56-3f35-419b-a8f7-929738acae1a
-
-
-
-https://github.com/user-attachments/assets/bc8a09d9-d484-4031-9a56-beed46d96bb2
-
-
 # Algorithm2026
 ### Homework1
-
-
 
 
 Selction_Sorting
