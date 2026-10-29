@@ -29,7 +29,7 @@ Buble_Sorting
 [Array](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/Array.pde)
 
 
-[SortAnimation](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
+[Homework2](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/SortAnimation/SortAnimation.pde)
 
 https://github.com/user-attachments/assets/80e224e2-8a07-4ebb-a192-862d7f09734d
 
