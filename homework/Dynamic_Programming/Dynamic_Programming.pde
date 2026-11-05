@@ -1,0 +1,300 @@
+
+import java.awt.GraphicsEnvironment;
+import java.awt.Font;
+
+PFont koreanFont;
+
+int screenMode = 0;
+String inputText = "";
+String message = "원하는 DP 문제의 번호를 선택하세요.";
+
+ArrayList<String> output = new ArrayList<String>();
+
+final int SIZE = 5;
+
+int[][] table = {
+  {0, 0, 0, 0, 0},
+  {0, 6, 7, 12, 5},
+  {0, 5, 3, 11, 18},
+  {0, 7, 17, 3, 3},
+  {0, 8, 10, 14, 9}
+};
+
+int[][] dpTable = new int[SIZE][SIZE];
+
+int[] stamps = {80, 50, 10};
+
+void setup() {
+  size(850, 750);
+
+  String fontName = "Dialog";
+
+  String[] availableFonts =
+    GraphicsEnvironment
+    .getLocalGraphicsEnvironment()
+    .getAvailableFontFamilyNames();
+
+  for (int i = 0; i < availableFonts.length; i++) {
+    if (availableFonts[i].equals("Malgun Gothic")) {
+      fontName = "Malgun Gothic";
+      break;
+    }
+  }
+
+  koreanFont = createFont(fontName, 20, true);
+
+  textFont(koreanFont);
+  textSize(20);
+  textAlign(LEFT, TOP);
+}
+
+void draw() {
+  background(245);
+
+  textFont(koreanFont);
+
+  fill(30, 60, 100);
+  textSize(32);
+  text("Dynamic Programming", 40, 30);
+
+  fill(50);
+  textSize(19);
+
+  text("----------------------------------------", 40, 90);
+  text("1. 행렬의 최대 경로 합", 40, 130);
+  text("2. 계단 오르기", 40, 175);
+  text("3. 우표 문제 (DP vs Greedy)", 40, 220);
+  text("----------------------------------------", 40, 265);
+
+  fill(0, 100, 180);
+  textSize(20);
+  text(message, 40, 295);
+
+  fill(0);
+  text("입력값 : " + inputText, 40, 340);
+
+  fill(100);
+  textSize(16);
+
+  text("1, 2, 3 : 문제 선택", 40, 390);
+  text("숫자 입력 후 ENTER : 실행", 40, 420);
+  text("R : 메뉴로 돌아가기", 40, 450);
+
+  fill(0);
+  textSize(17);
+
+  float y = 500;
+
+  for (int i = 0; i < output.size(); i++) {
+    text(output.get(i), 40, y);
+    y += 23;
+  }
+}
+
+void keyPressed() {
+  if (key == 'r' || key == 'R') {
+    screenMode = 0;
+    inputText = "";
+    output.clear();
+    message = "원하는 DP 문제의 번호를 선택하세요.";
+    return;
+  }
+
+  if (screenMode == 0) {
+    if (key == '1') {
+      screenMode = 1;
+      message = "행렬 경로의 n을 입력하세요. (1~4)";
+    } else if (key == '2') {
+      screenMode = 2;
+      message = "계단의 개수를 입력하세요.";
+    } else if (key == '3') {
+      screenMode = 3;
+      message = "우편요금을 입력하세요. (10~400)";
+    }
+
+    inputText = "";
+    output.clear();
+  } else {
+    if (key >= '0' && key <= '9') {
+      inputText += key;
+    }
+
+    if (key == BACKSPACE && inputText.length() > 0) {
+      inputText = inputText.substring(0, inputText.length()-1);
+    }
+
+    if (key == ENTER || key == RETURN) {
+      if (inputText.length() > 0) {
+        int n = int(inputText);
+        output.clear();
+
+        if (screenMode == 1) {
+          if (n >= 1 && n < SIZE) {
+            matrixDP(n);
+          } else {
+            output.add("n은 1~4 사이로 입력하세요.");
+          }
+        } else if (screenMode == 2) {
+          if (n >= 0 && n <= 45) {
+            stairDP(n);
+          } else {
+            output.add("0~45 사이로 입력하세요.");
+          }
+        } else if (screenMode == 3) {
+          if (n >= 10 && n <= 400 && n % 10 == 0) {
+            stampDP(n);
+          } else {
+            output.add("10~400 사이의 10의 배수를 입력하세요.");
+          }
+        }
+
+        inputText = "";
+      }
+    }
+  }
+}
+
+void matrixDP(int n) {
+  for (int i = 0; i < SIZE; i++) {
+    for (int j = 0; j < SIZE; j++) {
+      dpTable[i][j] = 0;
+    }
+  }
+
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= n; j++) {
+      int a = dpTable[i-1][j-1];
+      int b = dpTable[i-1][j];
+      int c = dpTable[i][j-1];
+
+      int maxValue = max(a, max(b, c));
+
+      dpTable[i][j] = maxValue + table[i][j];
+    }
+  }
+
+  output.add("=== 행렬 최대 경로 합 ===");
+  output.add("목표 위치 : (" + n + ", " + n + ")");
+  output.add("최대 경로 합 : " + dpTable[n][n]);
+  output.add("");
+  output.add("[DP 테이블]");
+
+  for (int i = 0; i <= n; i++) {
+    String line = "";
+
+    for (int j = 0; j <= n; j++) {
+      line += dpTable[i][j] + "    ";
+    }
+
+    output.add(line);
+  }
+}
+
+void stairDP(int n) {
+  int[] stairs = new int[n+1];
+
+  stairs[0] = 1;
+
+  if (n >= 1) {
+    stairs[1] = 1;
+  }
+
+  for (int i = 2; i <= n; i++) {
+    stairs[i] = stairs[i-1] + stairs[i-2];
+  }
+
+  output.add("=== 계단 오르기 DP ===");
+  output.add("계단 개수 : " + n);
+  output.add("");
+  output.add("[각 계단의 경우의 수]");
+
+  for (int i = 0; i <= n; i++) {
+    output.add(i + " 계단 : " + stairs[i] + "가지");
+  }
+
+  output.add("");
+  output.add("최종 경우의 수 : " + stairs[n]);
+}
+
+void stampDP(int money) {
+  int INF = 99999;
+
+  int[] dp = new int[money+1];
+  int[] lastStamp = new int[money+1];
+
+  for (int i = 0; i <= money; i++) {
+    dp[i] = INF;
+    lastStamp[i] = -1;
+  }
+
+  dp[0] = 0;
+
+  for (int i = 10; i <= money; i += 10) {
+    for (int j = 0; j < stamps.length; j++) {
+      int coin = stamps[j];
+
+      if (i >= coin && dp[i-coin] != INF) {
+        if (dp[i-coin] + 1 < dp[i]) {
+          dp[i] = dp[i-coin] + 1;
+          lastStamp[i] = coin;
+        }
+      }
+    }
+  }
+
+  int[] dpCount = new int[3];
+  int remain = money;
+
+  while (remain > 0) {
+    int coin = lastStamp[remain];
+
+    if (coin == -1) {
+      break;
+    }
+
+    for (int j = 0; j < stamps.length; j++) {
+      if (stamps[j] == coin) {
+        dpCount[j]++;
+        break;
+      }
+    }
+
+    remain -= coin;
+  }
+
+  int[] greedyCount = new int[3];
+  remain = money;
+
+  for (int i = 0; i < stamps.length; i++) {
+    greedyCount[i] = remain / stamps[i];
+    remain = remain % stamps[i];
+  }
+
+  int greedyTotal = 0;
+
+  for (int i = 0; i < 3; i++) {
+    greedyTotal += greedyCount[i];
+  }
+
+  output.add("=== 우표 문제 결과 ===");
+  output.add("우편요금 : " + money + "원");
+  output.add("");
+  output.add("[DP 최적해]");
+  output.add("최소 우표 개수 : " + dp[money] + "장");
+  output.add("80원 : " + dpCount[0] + "장");
+  output.add("50원 : " + dpCount[1] + "장");
+  output.add("10원 : " + dpCount[2] + "장");
+  output.add("");
+  output.add("[Greedy 결과]");
+  output.add("우표 개수 : " + greedyTotal + "장");
+  output.add("80원 : " + greedyCount[0] + "장");
+  output.add("50원 : " + greedyCount[1] + "장");
+  output.add("10원 : " + greedyCount[2] + "장");
+  output.add("");
+
+  if (dp[money] == greedyTotal) {
+    output.add("DP와 Greedy의 결과가 같습니다.");
+  } else {
+    output.add("DP가 더 적은 우표를 사용합니다.");
+  }
+}
