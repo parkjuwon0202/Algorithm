@@ -49,6 +49,9 @@ https://github.com/user-attachments/assets/a0247d27-5ad0-4b49-8d10-2bfecfb5a27c
 
 <img width="922" height="676" alt="Dynamic_Programming" src="https://github.com/user-attachments/assets/0f0dc3eb-9d49-4845-a167-97617b94e790" />
 
+[HomeWork6](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/BFS_and_DFS_for_a_graph/BFS_and_DFS_for_a_graph.pde)
+
+<img width="1275" height="734" alt="BFS and DFS for a graph " src="https://github.com/user-attachments/assets/ca209d84-296b-4980-870b-cedc13030217" />
 
 
 
