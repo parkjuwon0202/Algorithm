@@ -45,9 +45,10 @@ https://github.com/user-attachments/assets/a0247d27-5ad0-4b49-8d10-2bfecfb5a27c
 
 <img width="921" height="864" alt="HashTable결과" src="https://github.com/user-attachments/assets/cd7ba415-2821-49f8-8a94-79089e6f789a" />\
 
-[Homework5](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/Dynamic_Programming/Dynamic_Programming.pde)
+[Homework5](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/Pebble_Placement_Problem/Pebble_Placement_Problem.pde)
 
-<img width="922" height="676" alt="Dynamic_Programming" src="https://github.com/user-attachments/assets/0f0dc3eb-9d49-4845-a167-97617b94e790" />
+<img width="1920" height="1080" alt="스크린샷(2)" src="https://github.com/user-attachments/assets/99b61044-fb2d-44ee-9370-9bf64384f728" />
+
 
 [HomeWork6](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/BFS_and_DFS_for_a_graph/BFS_and_DFS_for_a_graph.pde)
 
