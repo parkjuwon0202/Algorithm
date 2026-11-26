@@ -55,4 +55,7 @@ https://github.com/user-attachments/assets/a0247d27-5ad0-4b49-8d10-2bfecfb5a27c
 <img width="1275" height="734" alt="BFS and DFS for a graph " src="https://github.com/user-attachments/assets/ca209d84-296b-4980-870b-cedc13030217" />
 
 
+[HomeWork7](https://github.com/parkjuwon0202/Algorithm/blob/main/homework/Minimum_Spanning_Tree___Kruskal_s_Algorithm/Minimum_Spanning_Tree___Kruskal_s_Algorithm.pde)
+
+<img width="1363" height="628" alt="Minimum Spanning Tree - Kruskal&#39;s Algorithm" src="https://github.com/user-attachments/assets/c3120016-8f3d-4a9a-b399-eb7364c8792f" />
 
